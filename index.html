@@ -5,178 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     
     <title>Document</title>
 
 </head>
 <body>
-    <!-- <header class="container">
-        <h3><span>Bored!</span><br>Looking for something to do?</h3>
-        <p>Our bot can help with that. <br>Give it a try!</p>  
-    </header> -->
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <p class="title">
-                    <span>Bored!</span><br>Looking for something to do?
-                </p>
-                <p class="subtitle">
-                    Our bot can help with that. <br>Give it a try!
-                </p>
+    <header class="hero is-medium">
+      <div class="hero-body columns">
+        <div class="container has-text-centered">
+          <p class="title custom-title custom-font">
+            <span>Bored!</span><br>Looking for something to do?
+          </p>
+          <p class="subtitle custom-subtitle custom-font">
+            Our bot can help with that. <br>Give it a try!
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Accessibility: </label>
+            <div class="control">
+              <div class="select is-medium">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>0.0</option>
+                  <option>0.1</option>
+                  <option>0.2</option>
+                  <option>0.3</option>
+                  <option>0.4</option>
+                  <option>0.5</option>
+                  <option>0.6</option>
+                  <option>0.7</option>
+                  <option>0.8</option>
+                  <option>0.9</option>
+                  <option>1.0</option>
+                </select>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    
-    
-    <div class="container">
-        <div class="columns">
-            
-            
-          
-
-                <!-- random activity will go here -->
-                <div class="column">
-
-                  <!-- start of testing fetch code -->
-            <select id="type">
-            <option value="education">education</option>
-            <option value="recreational">recreational</option>
-            <option value="social">social</option>
-            <option value="diy">diy</option>
-            </select> 
-                  <!-- end of testing fetch code -->
-
-
-                    <div class="dropdown is-active">
-                        <div class="dropdown-trigger">
-                          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                            <span>Type</span>
-                            <span class="icon is-small">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                          </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                          <div class="dropdown-content">
-                            <div class="dropdown-item">
-                              education
-                            </div>
-                            <hr class="dropdown-divider">
-                            <div class="dropdown-item">
-                              recreational
-                            </div>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                              This is a link
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="column">
-                    <div class="dropdown is-active">
-                        <div class="dropdown-trigger">
-                          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                            <span>Participants</span>
-                            <span class="icon is-small">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                          </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                          <div class="dropdown-content">
-                            <div class="dropdown-item">
-                              1
-                            </div>
-                            <hr class="dropdown-divider">
-                            <div class="dropdown-item">
-                              2
-                            </div>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                              This is a link
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="column">
-                    <div class="dropdown is-active">
-                        <div class="dropdown-trigger">
-                          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                            <span>Content</span>
-                            <span class="icon is-small">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                          </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                          <div class="dropdown-content">
-                            <div class="dropdown-item">
-                              <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                            </div>
-                            <hr class="dropdown-divider">
-                            <div class="dropdown-item">
-                              <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
-                            </div>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                              This is a link
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="column">
-                    <div class="dropdown is-active">
-                        <div class="dropdown-trigger">
-                          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                            <span>Content</span>
-                            <span class="icon is-small">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                          </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                          <div class="dropdown-content">
-                            <div class="dropdown-item">
-                              <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                            </div>
-                            <hr class="dropdown-divider">
-                            <div class="dropdown-item">
-                              <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
-                            </div>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                              This is a link
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                
-
-            
-            
-            
+      
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Type:</label>
+            <div class="control">
+              <div class="select is-medium">
+                <select id="type">
+                  <option>Select dropdown</option>
+                  <option>education</option>
+                  <option>recreational</option>
+                  <option>social</option>
+                  <option>diy</option>
+                  <option>charity</option>
+                  <option>cooking</option>
+                  <option>relaxation</option>
+                  <option>music</option>
+                  <option>busywork</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="columns is-centered">
-            <button class="btn button is-link is-medium is-outlined">Get Activity</button>
+     
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Participants:</label>
+            <div class="control">
+              <div class="select is-medium">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="columns">
-            <!-- other api -->
-            Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Price:</label>
+            <div class="control">
+              <div class="select is-medium">
+                <select>
+                  <option>Select dropdown</option>
+                  <option value="0.0">0</option>
+                  <option value="0.1">1</option>
+                  <option value="0.2">2</option>
+                  <option value="0.3">3</option>
+                  <option value="0.4">4</option>
+                  <option value="0.5">5</option>
+                  <option value="0.6">6</option>
+                  <option value="0.7">7</option>
+                  <option value="0.8">8</option>
+                  <option value="0.9">9</option>
+                  <option value="1.0">10</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <footer class="container has-text-centered">
-        <div>&copy; Team 4</div>
-    </footer>
+      </div>
+      
+      <div class="columns is-centered mt-5">
+        <button class="btn button is-link is-large custom-font">Generate Activity!</button>
+      </div>
+    </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
