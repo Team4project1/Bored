@@ -5,34 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     
     <title>Document</title>
 
 </head>
 <body>
-    <div class="container">
-        <div>
-            <div>
-                <h3><span>Bored!</span><br>Looking for something to do?</h3>
-                <p>Our bot can help with that. <br>Give it a try!</p>
-            </div>
-            <div>
-                <!-- random activity will go here -->
-
-            </div>
-            <div>
-                <button type="button">Get Activity</button>
-            </div>
-            <div>
-                <!-- other api -->
-            </div>
+    <header class="hero is-medium">
+      <div class="hero-body columns">
+        <div class="container has-text-centered animated-title">
+          <div class="title custom-title custom-font text-top">
+           <div>
+           <span>Bored!</span><span class="custom-subtitle">Looking for something to do?</span>
+          </div>
         </div>
-    </div>
-    <footer>
-        <div>&copy; Team 4</div>
-    </footer>
+          <div class="subtitle custom-subtitle custom-font text-bottom">
+            <div>Our bot can help with that. <br>Give it a try!
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Accessibility: </label>
+            <div class="control">
+              <div class="select is-medium">
+                <select id="accessibility">
+                  <option>Select dropdown</option>
+                  <option>0.0</option>
+                  <option>0.1</option>
+                  <option>0.2</option>
+                  <option>0.3</option>
+                  <option>0.4</option>
+                  <option>0.5</option>
+                  <option>0.6</option>
+                  <option>0.7</option>
+                  <option>0.8</option>
+                  <option>0.9</option>
+                  <option>1.0</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Type:</label>
+            <div class="control">
+              <div class="select is-medium">
+                <select id="type">
+                  <option>Select dropdown</option>
+                  <option>education</option>
+                  <option>recreational</option>
+                  <option>social</option>
+                  <option>diy</option>
+                  <option>charity</option>
+                  <option>cooking</option>
+                  <option>relaxation</option>
+                  <option>music</option>
+                  <option>busywork</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Participants:</label>
+            <div class="control">
+              <div class="select is-medium">
+                <select id= "participants">
+                  <option>Select dropdown</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="field">
+            <label class="label custom-font">Price:</label>
+            <div class="control">
+              <div class="select is-medium">
+                <select id="price">
+                  <option>Select dropdown</option>
+                  <option value="0.0">0</option>
+                  <option value="0.1">1</option>
+                  <option value="0.2">2</option>
+                  <option value="0.3">3</option>
+                  <option value="0.4">4</option>
+                  <option value="0.5">5</option>
+                  <option value="0.6">6</option>
+                  <option value="0.7">7</option>
+                  <option value="0.8">8</option>
+                  <option value="0.9">9</option>
+                  <option value="1.0">10</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columns is-centered mt-5">
+        <button class="btn button is-link is-large custom-font">Generate Activity!</button>
+      </div>
+
+      <div class="title custom-title custom-font" id="activity">
+      </div>
+
+
+      
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
