@@ -25,6 +25,46 @@ main {
     text-align: center;
 }
 
+/* weather forecast style starts */
+.current-weather {
+  /* border: solid 1px white; */
+  color: white;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.forecast {
+  background-color: #0f2843;
+  color: white;
+  padding: 0.25rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.forecast-content {
+  margin: 0;
+  padding-bottom: 0.75rem;
+}
+
+#currentUVIndex {
+  padding: 2px 5px;
+}
+
+.favorable {
+  background-color: green;
+  color: white;
+}
+
+.moderate {
+  background-color: #ffbf00;
+  color: white;
+}
+
+.severe {
+  background-color: red;
+  color: white;
+}
+/* weather forecast style ends */
+
 /* Animation Effects for the top section */
 @keyframes showTopText {
     0% { transform: translate3d(0, 100%, 0); }
