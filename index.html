@@ -5,34 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     
     <title>Document</title>
 
 </head>
 <body>
-    <div class="container">
-        <div>
+      <header class="hero is-medium">
+        <div class="hero-body columns">
+          <div class="container has-text-centered animated-title">
+            <div class="title custom-title custom-font text-top">
             <div>
-                <h3><span>Bored!</span><br>Looking for something to do?</h3>
-                <p>Our bot can help with that. <br>Give it a try!</p>
+            <span>Bored!</span><span class="custom-subtitle">Looking for something to do?</span>
             </div>
-            <div>
-                <!-- random activity will go here -->
-
+          </div>
+            <div class="subtitle custom-subtitle custom-font text-bottom">
+              <div>Our bot can help with that. <br>Give it a try!
+              </div>
             </div>
-            <div>
-                <button type="button">Get Activity</button>
-            </div>
-            <div>
-                <!-- other api -->
-            </div>
+          </div>
         </div>
-    </div>
-    <footer>
-        <div>&copy; Team 4</div>
-    </footer>
+      </header>
+
+      <main>
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <div class="control">
+                  <div class="select is-medium">
+                    <select id="accessibility">
+                      <option>Choose Accessibility Level</option>
+                      <option>0.0</option>
+                      <option>0.1</option>
+                      <option>0.2</option>
+                      <option>0.3</option>
+                      <option>0.4</option>
+                      <option>0.5</option>
+                      <option>0.6</option>
+                      <option>0.7</option>
+                      <option>0.8</option>
+                      <option>0.9</option>
+                      <option>1.0</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="field">
+                <div class="control">
+                  <div class="select is-medium">
+                    <select id="type">
+                      <option>Choose Type</option>
+                      <option>education</option>
+                      <option>recreational</option>
+                      <option>social</option>
+                      <option>diy</option>
+                      <option>charity</option>
+                      <option>cooking</option>
+                      <option>relaxation</option>
+                      <option>music</option>
+                      <option>busywork</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="column">
+              <div class="field">
+                <div class="control">
+                  <div class="select is-medium">
+                    <select id= "participants">
+                      <option>Choose Number of Participants</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="field">
+                <div class="control">
+                  <div class="select is-medium">
+                    <select id="price">
+                      <option>Choose Price Level</option>
+                      <option value="0.0">0</option>
+                      <option value="0.1">1</option>
+                      <option value="0.2">2</option>
+                      <option value="0.3">3</option>
+                      <option value="0.4">4</option>
+                      <option value="0.5">5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        <div class="columns is-centered mt-5">
+            <button class="btn button is-link is-large custom-font">Generate Activity!</button>
+          </div>
+
+          <div class="title is-centered custom-title custom-font display" id="activity">
+        </div>
+
+
+        <section class="column is-centered is-2 is-offset-5">
+          <!-- current weather element -->
+          <div class="current-weather is-centered pl-1 mb-3 content is-small">
+            <div class="mt-1">
+                <h2 id="currentCity" class="title is-5 has-text-weight-bold mb-0 has-text-white"></h2>
+                <img id="currentIcon" class="weather-icon" />
+            </div>
+            <p class="m-0 pb-3 has-text-weight-semibold">Temp: <span id="currentTemp"></span></p>
+            <p class="m-0 pb-3 has-text-weight-semibold">Wind: <span id="currentWind"></span></p>
+            <p class="m-0 pb-3 has-text-weight-semibold">Humidity: <span id="currentHumidity"></span></p>
+            <p class="m-0 pb-3 has-text-weight-semibold">UV Index: <span id="currentUVIndex"></span></p>
+          </div>
+          
+          <!-- 5-day forecast element -->
+          <!-- <div>
+              <div class="title is-6 has-text-weight-bold has-text-white">5-Day Forecast:</div>
+              <div id="futureForecast" class="is-size-7 has-text-weight-semibold"></div>
+          </div> -->
+        </section>
+  
+      </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

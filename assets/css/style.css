@@ -1,0 +1,148 @@
+html {
+    background-image: url("../images/hero.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.custom-font {
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.custom-title {
+    font-size: 3rem;
+}
+
+.dsiplay {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+.custom-subtitle {
+    font-size: 2rem;
+}
+
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* weather forecast style starts */
+.current-weather {
+  /* border: solid 1px white; */
+  color: white;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.forecast {
+  background-color: #0f2843;
+  color: white;
+  padding: 0.25rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.forecast-content {
+  margin: 0;
+  padding-bottom: 0.75rem;
+}
+
+#currentUVIndex {
+  padding: 2px 5px;
+}
+
+.favorable {
+  background-color: green;
+  color: white;
+}
+
+.moderate {
+  background-color: #ffbf00;
+  color: white;
+}
+
+.severe {
+  background-color: red;
+  color: white;
+}
+/* weather forecast style ends */
+
+/* Animation Effects for the top section */
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  @keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  .animated-title {
+    color: #222;
+    height: 90vmin;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    padding: 2vmin 0;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid #d7d4db;
+    top: 0;
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+  .animated-title > div.text-top div span:last-child,
+  .animated-title > div.text-bottom div {
+    color: #d7d4db;
+  }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+    width: 100%;
+  }
+
+  /* Media Query */
+  @media screen and (max-width: 320px) {
+    
+    main {
+        margin-top: 210px; 
+    }
+
+  }
+
+  @media screen and (max-width: 320px){
+    
+    main {
+        margin: 20px auto;
+    }
+
+  }
