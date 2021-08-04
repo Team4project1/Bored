@@ -20,6 +20,11 @@ html {
     font-size: 2rem;
 }
 
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+
 /* Animation Effects for the top section */
 @keyframes showTopText {
     0% { transform: translate3d(0, 100%, 0); }
@@ -78,4 +83,21 @@ html {
     top: 0;
     transform: translate(0, -100%);
     width: 100%;
+  }
+
+  /* Media Query */
+  @media screen and (min-width: 250px) {
+    
+    main {
+        margin-top: 210px; 
+    }
+
+  }
+
+  @media screen and (min-width: 768px) {
+    
+    main {
+        margin: 20px auto;
+    }
+
   }
