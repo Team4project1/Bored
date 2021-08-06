@@ -1,14 +1,17 @@
 # Team Four Project ###
-***The Concept ***
-# The user requires a call to two or more API"s
-# The result for one API is sent to another API to generate results
-# Fetch then response commands
+## The Concept ***
+### The user requires a call to two or more API"s
+### The result for one API 
+###  sent to another API to generate results
+### Fetch then response commands
 *** Thought Process **
 - The current pandemic makes it difficult to socialized
 - Staying home or being around the same persons leads to boredom
 ### The Idea***
 - Develop an application that can assist with boredom
-- Application that suggest activities in a small group or individually.
+- Application that suggest activities
+    - in a small group 
+        - or individually.
 - Must be accessible
 - Must be affordable or free
 - Must be engaging 
@@ -69,5 +72,5 @@
 ![GitHub](https://github.com/Team4project1/Bored)
 ### Team Memmbers ###
 
-## Credits and Thanks ##
+### Credits and Thanks ##
 
