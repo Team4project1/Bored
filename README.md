@@ -34,8 +34,12 @@
 - Github 
 - **Bored API 
    - and Weather API
-- ** Zoom / Slacks / google Meets communication tools 
-![Initial Layout](./team4PageLayout.bmpr)
+- ** Zoom 
+    - Slacks
+        - google meets 
+            - communication tools 
+  ### Initial Layout          
+![Initial Layout](./assets/images/team4PageLayout.bmpr)
 ## Balsamiq was used for initial design
 ""User Stories""
 - I am bore 
