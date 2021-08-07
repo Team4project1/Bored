@@ -16,6 +16,11 @@ html {
     font-size: 3rem;
 }
 
+.dsiplay {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+
 .custom-subtitle {
     font-size: 2rem;
 }
@@ -24,6 +29,46 @@ main {
     margin-top: 50px;
     text-align: center;
 }
+
+/* weather forecast style starts */
+.current-weather {
+  /* border: solid 1px white; */
+  color: white;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.forecast {
+  background-color: #0f2843;
+  color: white;
+  padding: 0.25rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.forecast-content {
+  margin: 0;
+  padding-bottom: 0.75rem;
+}
+
+#currentUVIndex {
+  padding: 2px 5px;
+}
+
+.favorable {
+  background-color: green;
+  color: white;
+}
+
+.moderate {
+  background-color: #ffbf00;
+  color: white;
+}
+
+.severe {
+  background-color: red;
+  color: white;
+}
+/* weather forecast style ends */
 
 /* Animation Effects for the top section */
 @keyframes showTopText {
@@ -86,7 +131,7 @@ main {
   }
 
   /* Media Query */
-  @media screen and (min-width: 250px) {
+  @media screen and (max-width: 320px) {
     
     main {
         margin-top: 210px; 
@@ -94,7 +139,7 @@ main {
 
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 320px){
     
     main {
         margin: 20px auto;
