@@ -7,6 +7,7 @@
 //var urlApi = 'https://www.boredapi.com/api/activity?participants=3';
 
 var apiKey = "538681b1e89e9be05aae483d03e2774a";
+var activityArr = [];
 
 var currentCityEl = document.querySelector("#currentCity");
 var currentIconEl = document.querySelector("#currentIcon");
@@ -51,22 +52,54 @@ $(".btn").click(function (event) {
       response.json().then(function(data) {
         console.log(data);
         var activityGen = document.getElementById('activity');
-        activityGen.textContent=data.activity;
+        activityGen.textContent = data.activity;
+        activityArr.push(data.activity);
+        saveActivities();
+        loadActivities();
         });
-    //});
-    // .then(function(data) {
-    //   console.log(data);
-    
-    //   $(".activity").text(data.activity);
-
-    
-    
-    
     });
 });
 
-var getTorontoWeather = function() {
-  var apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=43.7001&lon=-79.4163&units=metric&appid=" + apiKey;
+var saveActivities = function() {
+  localStorage.setItem("boredActivities", JSON.stringify(activityArr));
+};
+
+var loadActivities = function() {
+  activityArr = JSON.parse(localStorage.getItem("boredActivities"));
+};
+
+var getCurrentCity = function(lat, lon) {
+  var apiURL = "http://api.openweathermap.org/geo/1.0/reverse?lat=" + lat + "&lon=" + lon + "&limit=5&appid=" + apiKey;
+
+  fetch(apiURL).then(function(response){
+    // request was successful
+    if (response.ok) {
+      response.json().then(function(data) {
+        displayCity(data);
+        // displayFutureForecast(data);
+      });
+    }
+  }).catch(function(error) {
+    // Notice this `.catch()` getting chained onto the end of the `.then()` method
+    alert("Unable to connect to OpenWeatherMap");
+  });
+
+};
+
+var displayCity = function(city){
+  var currentDate = moment();
+
+  // check if api returned any forecast
+  if (city.length === 0) {
+    currentCityEl.textContent = "No Weather Forecast";
+    return;
+  }
+
+  currentCityEl.textContent = city[0].name + ", " + city[0].country + currentDate.format(" (M/D/YYYY)");
+};
+
+var getCurrentWeather = function(lat, lon) {
+  var apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=metric&appid=" + apiKey;
 
   fetch(apiURL).then(function(response){
     // request was successful
@@ -84,11 +117,9 @@ var getTorontoWeather = function() {
 };
 
 var displayForecast =  function(forecast) {
-  var currentDate = moment();
 
     // check if api returned any forecast
     if (forecast.length === 0) {
-      currentCityEl.textContent = "No repositories found.";
       currentIconEl.setAttribute("src", "");
       currentTempEl.textContent = "";
       currentWindEl.textContent = "";
@@ -98,7 +129,6 @@ var displayForecast =  function(forecast) {
     }
 
     // display current forecast
-    currentCityEl.textContent = "Toronto" + currentDate.format(" (M/D/YYYY)");
     currentIconEl.setAttribute("src", "http://openweathermap.org/img/wn/"+ forecast.current.weather[0].icon +"@2x.png");
     currentTempEl.textContent = forecast.current.temp + " °C";
     currentWindEl.textContent = forecast.current.wind_speed + " m/s";
@@ -173,4 +203,16 @@ var displayForecast =  function(forecast) {
 //   }
 // };
 
-getTorontoWeather();
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      getCurrentWeather(position.coords.latitude, position.coords.longitude);
+      getCurrentCity(position.coords.latitude, position.coords.longitude);
+    });
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+getLocation();
+loadActivities();
