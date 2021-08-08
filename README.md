@@ -69,7 +69,7 @@
 ### Snap Shot
 This is an image of the projects web-site
 
-[Snap Shot](./assets/images/snapShot.PNG)
+![Snap Shot](./assets/images/snapShot.PNG)
 
 ### Presention
 
