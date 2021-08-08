@@ -68,7 +68,7 @@
       - working MVP
 
 ### Presention
-![Presentation](./Presentation/Team 4 Project Presentation.pptx)
+![Presentation](./Team 4 Project Presentation.pptx)
 
 ### MVP 
 ![MVP](https://team4project1.github.io/Bored/)
@@ -81,10 +81,15 @@
 ### Team Members 
 
 ![Charles Dawkins](https://github.com/DawkC)
+
 ![Mikhael Hamoy](https://github.com/mikhaelhamoy)
+
 ![Jessica Wu](https://github.com/jessibewu)
+
 ![Abison Vijayakanthan](https://github.com/akvijaya)
+
 ![Talha Latif](https://github.com/Talha636)
+
 ![Neil Hall](https://github.com/Jahneo)
 
 ### Credits and Thanks
