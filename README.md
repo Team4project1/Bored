@@ -68,7 +68,7 @@
       - working MVP
 
 ### Presention
-[Presentation](./assets/images/Team 4 Project Presentation.pptx)
+![Presentation](./assets/images/Team 4 Project Presentation.pptx)
 
 ### MVP 
 [MVP](https://team4project1.github.io/Bored/)
