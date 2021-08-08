@@ -3,6 +3,7 @@ html {
     background-blend-mode: darken;
     background-size: cover;
     background-color: rgba(0, 0, 0, .25);
+    background-repeat: no-repeat;
 }
 
 .custom-font {
@@ -12,14 +13,10 @@ html {
     text-shadow: 2px 2px 2px #333;
 }
 
+/* heading styling */
 .custom-title {
     font-size: 3rem;
 }
-
-.dsiplay {
-  background-color: rgba(255, 0, 0, 0.5);
-}
-
 
 .custom-subtitle {
     font-size: 2rem;
@@ -70,7 +67,7 @@ main {
 }
 /* weather forecast style ends */
 
-/* Animation Effects for the top section */
+/* Animation Effects for heading */
 @keyframes showTopText {
     0% { transform: translate3d(0, 100%, 0); }
     40%, 60% { transform: translate3d(0, 50%, 0); }
@@ -131,18 +128,16 @@ main {
   }
 
   /* Media Query */
-  @media screen and (max-width: 320px) {
+  @media screen and (min-width: 200px) {
     
     main {
         margin-top: 210px; 
     }
-
   }
 
-  @media screen and (max-width: 320px){
+  @media screen and (min-width: 770px){
     
     main {
-        margin: 20px auto;
+        margin: 30px auto;
     }
-
   }
