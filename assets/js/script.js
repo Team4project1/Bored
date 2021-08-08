@@ -1,4 +1,5 @@
 var apiKey = "ed5144ccf4ecccb56dd76aaca5b3a391";
+var apiKey2 = "ca0d9730afad574e7f01e6c9c7de8148";
 var activityArr = [];
 
 var currentCityEl = document.querySelector("#currentCity");
@@ -90,7 +91,7 @@ var displayCity = function(city){
 };
 
 var getCurrentWeather = function(lat, lon) {
-  var apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=metric&appid=" + apiKey;
+  var apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=metric&appid=" + apiKey2;
 
   fetch(apiURL).then(function(response){
     // request was successful
