@@ -63,9 +63,7 @@ $(".btn").click(function (event) {
 
 
 $(".modal-button").click(function() {
-  var target = $(this).data("target");
-  $("html").addClass("is-clipped");
-  $(target).addClass("is-active");
+  document.getElementById('modal').style.display='flex';
 
   for (let i = 0; i < activityArr.length; i++) {
     var activityHistory=document.getElementById('history');
