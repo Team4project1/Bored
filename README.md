@@ -68,16 +68,16 @@
       - working MVP
 
 ### Presention
-![Presentation](./Presentation/Team 4 Project Presentation.pptx)
+[Presentation](./Presentation/Team 4 Project Presentation.pptx)
 
 ### MVP 
-![MVP](https://team4project1.github.io/Bored/)
+[MVP](https://team4project1.github.io/Bored/)
 
 ### Project Deployment
-![Bored!!!](https://team4project1.github.io/Bored/)
+[Bored!!!](https://team4project1.github.io/Bored/)
 
 ### GitHub Repository Link 
-![GitHub](https://github.com/Team4project1/Bored)
+[GitHub](https://github.com/Team4project1/Bored)
 ### The Team
 ### Team Members |   Portfolio Link
 
