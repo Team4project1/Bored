@@ -68,7 +68,7 @@
       - working MVP
 ### Snap Shot
 This is an image of the projects web-site
-![Snap Shot] (./assets/images/snapShot.png)
+![Snap Shot](./assets/images/snapShot.png)
 
 ### Presention
 
