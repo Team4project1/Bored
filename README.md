@@ -69,7 +69,7 @@
 
 ### Presention
 
-![Presentation](./assets/images/Team 4 Project Presentation.pptx)
+[Presentation](https://prezi.com/p/aeazqt_q-uga/bored/)
 
 ### MVP 
 [MVP](https://team4project1.github.io/Bored/)
