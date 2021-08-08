@@ -101,7 +101,7 @@ Jessica Wu       | [Portfolio](https://jessibewu.github.io/portfolio/)
 
 Abison Vijayakanthan | [Portfolio](https://github.com/akvijaya)
 
-Talha Latif      | [Portfolio](https://github.com/Talha636)
+Talha Latif      | [Portfolio](https://talha636.github.io/Talha/)
 
 Neil Hall        | [Portfolio](https://jahneo.github.io/Portfolio/)
 
