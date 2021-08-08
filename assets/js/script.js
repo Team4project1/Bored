@@ -65,6 +65,7 @@ $(".modal-button").click(function() {
     
     activityHistory.appendChild(previousActivity);
   }
+  activityArr =[];
 });
 
 var getCurrentCity = function(lat, lon) {
