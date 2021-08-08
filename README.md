@@ -93,7 +93,7 @@ This is an image of the projects web-site
 ## The Team
 ### Team Members |   Portfolio Link
 
-Charles Dawkins  | [Portfolio](https://github.com/DawkC)
+Charles Dawkins  | [Portfolio](https://dawkc.github.io/Charles-Dawkins-Portfolio/)
 
 Mikhael Hamoy    | [Portfolio](https://github.com/mikhaelhamoy)
 
