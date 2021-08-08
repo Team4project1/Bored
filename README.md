@@ -1,4 +1,4 @@
-# Team Four Project Bored API Lined to Open Weather API
+# Team Four Project Interactive Front-End Project
 ### The Concept 
 - The user requires a call to two or more API"s
 - The result from one API 
@@ -68,7 +68,7 @@
       - working MVP
 
 ### Presention
-[Presentation](./Presentation/Team 4 Project Presentation.pptx)
+[Presentation](./assets/images/Team 4 Project Presentation.pptx)
 
 ### MVP 
 [MVP](https://team4project1.github.io/Bored/)
