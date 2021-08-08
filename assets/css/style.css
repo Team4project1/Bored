@@ -3,6 +3,7 @@ html {
     background-blend-mode: darken;
     background-size: cover;
     background-color: rgba(0, 0, 0, .25);
+    background-repeat: no-repeat;
 }
 
 .custom-font {
@@ -15,11 +16,6 @@ html {
 .custom-title {
     font-size: 3rem;
 }
-
-.dsiplay {
-  background-color: rgba(255, 0, 0, 0.5);
-}
-
 
 .custom-subtitle {
     font-size: 2rem;
@@ -131,18 +127,16 @@ main {
   }
 
   /* Media Query */
-  @media screen and (max-width: 320px) {
+  @media screen and (min-width: 200px) {
     
     main {
         margin-top: 210px; 
     }
-
   }
 
-  @media screen and (max-width: 320px){
+  @media screen and (min-width: 700px){
     
     main {
-        margin: 20px auto;
+        margin: 30px auto;
     }
-
   }
