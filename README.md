@@ -99,7 +99,7 @@ Mikhael Hamoy    | [Portfolio](https://github.com/mikhaelhamoy)
 
 Jessica Wu       | [Portfolio](https://jessibewu.github.io/portfolio/)
 
-Abison Vijayakanthan | [Portfolio](https://github.com/akvijaya)
+Abison Vijayakanthan | [Portfolio](https://akvijaya.github.io/Abison-Kunan-Vijayakanthan-Portfolio/)
 
 Talha Latif      | [Portfolio](https://talha636.github.io/Talha/)
 
