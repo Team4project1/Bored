@@ -77,13 +77,6 @@ $(".modal-button").click(function() {
   }
 });
 
-$(".modal-close").click(function() {
-  $("html").removeClass("is-clipped");
-  $(target).removeClass("is-active");
-});
-
-
-
 var getCurrentCity = function(lat, lon) {
   var apiURL = "http://api.openweathermap.org/geo/1.0/reverse?lat=" + lat + "&lon=" + lon + "&limit=5&appid=" + apiKey;
 
