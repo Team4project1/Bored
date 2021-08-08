@@ -78,19 +78,19 @@
 
 ### GitHub Repository Link 
 ![GitHub](https://github.com/Team4project1/Bored)
-### Team Members 
+### The Team
+### Team Members   |   Portfolio Link
+![Charles Dawkins]  | (https://github.com/DawkC)
 
-![Charles Dawkins](https://github.com/DawkC)
+![Mikhael Hamoy]  | (https://github.com/mikhaelhamoy)
 
-![Mikhael Hamoy](https://github.com/mikhaelhamoy)
+![Jessica Wu] | (https://github.com/jessibewu)
 
-![Jessica Wu](https://github.com/jessibewu)
+![Abison Vijayakanthan]| (https://github.com/akvijaya)
 
-![Abison Vijayakanthan](https://github.com/akvijaya)
+![Talha Latif] | (https://github.com/Talha636)
 
-![Talha Latif](https://github.com/Talha636)
-
-![Neil Hall](https://github.com/Jahneo)
+![Neil Hall] | (https://jahneo.github.io/Portfolio/)
 
 ### Credits and Thanks
 * The instructors of the UTOR-Coding-Bootcamp
