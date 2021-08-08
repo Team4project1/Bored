@@ -54,19 +54,35 @@ $(".btn").click(function (event) {
         var activityGen = document.getElementById('activity');
         activityGen.textContent = data.activity;
         activityArr.push(data.activity);
-        saveActivities();
-        loadActivities();
+        localStorage.setItem("boredActivities", JSON.stringify(activityArr));
+        activityArr = JSON.parse(localStorage.getItem("boredActivities"));
         });
     });
 });
 
-var saveActivities = function() {
-  localStorage.setItem("boredActivities", JSON.stringify(activityArr));
-};
 
-var loadActivities = function() {
-  activityArr = JSON.parse(localStorage.getItem("boredActivities"));
-};
+
+$(".modal-button").click(function() {
+  var target = $(this).data("target");
+  $("html").addClass("is-clipped");
+  $(target).addClass("is-active");
+
+  for (let i = 0; i < activityArr.length; i++) {
+    var activityHistory=document.getElementById('history');
+    var previousActivity=document.createElement("li");
+    previousActivity.className = "task";
+    previousActivity.innerHTML = activityArr[i];
+    
+    activityHistory.appendChild(previousActivity);
+  }
+});
+
+$(".modal-close").click(function() {
+  $("html").removeClass("is-clipped");
+  $(target).removeClass("is-active");
+});
+
+
 
 var getCurrentCity = function(lat, lon) {
   var apiURL = "http://api.openweathermap.org/geo/1.0/reverse?lat=" + lat + "&lon=" + lon + "&limit=5&appid=" + apiKey;
@@ -215,4 +231,3 @@ function getLocation() {
 }
 
 getLocation();
-loadActivities();

@@ -11,6 +11,27 @@
 
 </head>
 <body>
+
+  <div class="columns mt-6 is-rounded">
+    <button class="button is-link is-large custom-font modal-button" data-target = "#modal">Previous Activities</button>
+  </div>
+
+  <div id = "modal" class = "modal">
+    <div class = "modal-background"></div>
+    <div class = "modal-card">
+       <header class = "modal-card-head">
+          <p class = "modal-card-title">Previous Activities</p>
+          <button class = "delete" id= "modal-close" data-target = "#modal" aria-label = "close"></button>
+       </header>
+       
+       <section class = "modal-card-body">
+          <div class = "content" id="history"></div>
+       </section>
+    </div>
+ </div>
+
+
+
       <header class="hero is-medium">
         <div class="hero-body columns">
           <div class="container has-text-centered animated-title">
@@ -111,9 +132,9 @@
 
         <div class="columns is-centered mt-5">
             <button class="btn button is-link is-large custom-font">Generate Activity!</button>
-          </div>
+        </div>
 
-          <div class="title is-centered custom-title custom-font display" id="activity">
+        <div class="title is-centered custom-title custom-font display" id="activity">
         </div>
 
 
