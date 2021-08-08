@@ -13,6 +13,7 @@ html {
     text-shadow: 2px 2px 2px #333;
 }
 
+/* heading styling */
 .custom-title {
     font-size: 3rem;
 }
@@ -66,7 +67,7 @@ main {
 }
 /* weather forecast style ends */
 
-/* Animation Effects for the top section */
+/* Animation Effects for heading */
 @keyframes showTopText {
     0% { transform: translate3d(0, 100%, 0); }
     40%, 60% { transform: translate3d(0, 50%, 0); }
@@ -134,7 +135,7 @@ main {
     }
   }
 
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 770px){
     
     main {
         margin: 30px auto;

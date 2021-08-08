@@ -1,12 +1,4 @@
-//  var select = document.getElementById('type');
-//  var option = select.options[select.selectedIndex].value;
- 
-
-//var participants = $("#participants").val().trim();
-//var participants = document.getElementById('participants').value;
-//var urlApi = 'https://www.boredapi.com/api/activity?participants=3';
-
-var apiKey = "538681b1e89e9be05aae483d03e2774a";
+var apiKey = "ed5144ccf4ecccb56dd76aaca5b3a391";
 var activityArr = [];
 
 var currentCityEl = document.querySelector("#currentCity");
@@ -17,6 +9,7 @@ var currentHumidityEl = document.querySelector("#currentHumidity");
 var currentUVIndexEl = document.querySelector("#currentUVIndex");
 var futureForecastEl = document.querySelector("#futureForecast");
 
+//Fetch Bored API once "generate" btn is clicked based on dropdown values
 $(".btn").click(function (event) {
 
   var type = document.getElementById("type").value;
@@ -43,8 +36,6 @@ $(".btn").click(function (event) {
   if (participants!=='Choose Number of Participants'){
       urlApi+='&participants='+participants;
   }
-
-
 
   fetch(urlApi)
     .then(function(response) {
@@ -144,64 +135,6 @@ var displayForecast =  function(forecast) {
       currentUVIndexEl.classList = "severe";
     } 
 };
-
-// var displayFutureForecast = function(futureForecast){
-//   var currentDate = moment();
-
-//   while (futureForecastEl.lastChild) {
-//       futureForecastEl.removeChild(futureForecastEl.lastChild);
-//   }
-
-//   // loop through five days
-//   for (var i = 1; i < 6; i++){
-//     // create container
-//     var forecastEl = document.createElement("div");
-//     forecastEl.classList = "forecast is-full";
-
-//     // create date element
-//     var dateEl = document.createElement("p");
-//     dateEl.classList = "forecast-content pb-0";
-//     dateEl.textContent = currentDate.add(i, 'd').format("(M/D/YYYY)");
-
-//     // append date element to container
-//     forecastEl.appendChild(dateEl);
-
-//     // create weather icon element
-//     var iconEl = document.createElement("img");
-//     iconEl.classList = "forecast-content pb-0";
-//     iconEl.setAttribute("src", "http://openweathermap.org/img/wn/"+ futureForecast.daily[i].weather[0].icon +"@2x.png");
-
-//     // append weather icon element to container
-//     forecastEl.appendChild(iconEl);
-
-//     // create temperature element
-//     var tempEl = document.createElement("p");
-//     tempEl.classList = "forecast-content";
-//     tempEl.textContent = "Temp: " + futureForecast.daily[i].temp.day;
-
-//     // append temperature element to container
-//     forecastEl.appendChild(tempEl);
-
-//     // create wind speed element
-//     var windEl = document.createElement("p");
-//     windEl.classList = "forecast-content";
-//     windEl.textContent = "Wind: " + futureForecast.daily[i].wind_speed;
-    
-//     // append wind speed element to container
-//     forecastEl.appendChild(windEl);
-
-//     // create humidity element
-//     var humidityEl = document.createElement("p");
-//     humidityEl.classList = "forecast-content";
-//     humidityEl.textContent = "Humidity: " + futureForecast.daily[i].humidity;
-    
-//     // append humidity element to container
-//     forecastEl.appendChild(humidityEl);
-
-//     // append container to five-day forecast element
-//     futureForecastEl.appendChild(forecastEl);
-//   }
-// };
 
 function getLocation() {
   if (navigator.geolocation) {
