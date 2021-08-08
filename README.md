@@ -97,7 +97,7 @@ Charles Dawkins  | [Portfolio](https://dawkc.github.io/Charles-Dawkins-Portfolio
 
 Mikhael Hamoy    | [Portfolio](https://github.com/mikhaelhamoy)
 
-Jessica Wu       | [Portfolio](https://github.com/jessibewu)
+Jessica Wu       | [Portfolio](https://jessibewu.github.io/portfolio/)
 
 Abison Vijayakanthan | [Portfolio](https://github.com/akvijaya)
 
