@@ -84,9 +84,6 @@ This is an image of the projects web-site
 ### Presention
 [Presentation](https://prezi.com/p/aeazqt_q-uga/bored/)
 
-### MVP 
-[MVP](https://team4project1.github.io/Bored/)
-
 ### Project Deployment
 [Bored!!!](https://team4project1.github.io/Bored/)
 
