@@ -68,7 +68,7 @@ $(".modal-button").click(function() {
 });
 
 var getCurrentCity = function(lat, lon) {
-  var apiURL = "http://api.openweathermap.org/geo/1.0/reverse?lat=" + lat + "&lon=" + lon + "&limit=5&appid=" + apiKey;
+  var apiURL = "https://api.openweathermap.org/geo/1.0/reverse?lat=" + lat + "&lon=" + lon + "&limit=5&appid=" + apiKey;
 
   fetch(apiURL).then(function(response){
     // request was successful
