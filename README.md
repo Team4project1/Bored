@@ -95,7 +95,7 @@ This is an image of the projects web-site
 
 Charles Dawkins  | [Portfolio](https://dawkc.github.io/Charles-Dawkins-Portfolio/)
 
-Mikhael Hamoy    | [Portfolio](https://github.com/mikhaelhamoy)
+Mikhael Hamoy    | [Portfolio](https://mikhaelhamoy.github.io/portfolio/)
 
 Jessica Wu       | [Portfolio](https://jessibewu.github.io/portfolio/)
 
